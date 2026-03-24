@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: rgb(15, 23, 42);
+  font-feature-settings: "rounding-mode" 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Pawn module specific styles */
+.status-active {
+  color: rgb(22, 163, 74);
+  background-color: rgb(240, 253, 244);
+  border-color: rgb(187, 247, 208);
+}
+
+.status-near {
+  color: rgb(217, 119, 6);
+  background-color: rgb(255, 251, 235);
+  border-color: rgb(254, 243, 199);
+}
+
+.status-overdue {
+  color: rgb(225, 29, 72);
+  background-color: rgb(254, 242, 242);
+  border-color: rgb(254, 226, 226);
+}
+
+.status-settled {
+  color: rgb(71, 85, 105);
+  background-color: rgb(248, 250, 252);
+  border-color: rgb(226, 232, 240);
+}
+
+.loan-card {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 150ms;
+}
+
+.loan-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
