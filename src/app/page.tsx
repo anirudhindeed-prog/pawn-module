@@ -6,7 +6,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-slate-900 mb-2">Pawn Module</h1>
         <p className="text-slate-600 mb-8">Kumudu Jewellery ERP</p>
         <a
-          href="/login"
+          href="/dashboard"
           className="inline-block px-6 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition"
         >
           Get Started
